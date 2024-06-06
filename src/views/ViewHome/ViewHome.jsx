@@ -9,7 +9,6 @@ function ViewHome() {
       <Navbar />
       <Body />
       {/* <Articles /> */}
-      <Frontend />
       <Footer />
     </>
   );
