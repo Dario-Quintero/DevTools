@@ -1,15 +1,15 @@
+import Courses from "../../components/Courses/Courses"
 import Navbar from "../../components/Navbar/Navbar";
-import Frontend from "../../components/Frontend/Frontend";
 import Footer from "../../components/Footer/Footer";
 
-function ViewFrontend() {
+function ViewCourses() {
   return (
     <>
       <Navbar />
-      <Frontend />
+      <Courses />
       <Footer />
     </>
-  );
+  )
 }
 
-export default ViewFrontend;
+export default ViewCourses

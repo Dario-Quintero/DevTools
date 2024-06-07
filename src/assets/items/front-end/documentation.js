@@ -1,9 +1,17 @@
 export const DOCUMENTATION = [
   {
+    name: "JavaScript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    description:
+      "Lenguaje de programación interpretado que se utiliza principalmente en el desarrollo web.",
+    media: "https://i.ibb.co/h1dS7wj/image.png",
+    tags: ["lenguaje", "backend", "javascript"],
+  },
+  {
     name: "TypeScript",
     url: "https://www.typescriptlang.org/",
     description:
-      "TypeScript es un superconjunto de JavaScript que añade tipado estático y objetos basados en clases.",
+      "Superconjunto de JavaScript que añade tipado estático y objetos basados en clases.",
     media: "https://i.ibb.co/BZ9XXT9/image.png",
     tags: ["lenguaje", "javascript", "frontend", "typescript"],
   },
@@ -28,7 +36,7 @@ export const DOCUMENTATION = [
     description:
       "Generador de sitios estáticos que te permite escribir HTML moderno y renderizarlo a HTML estático al compilarlo.",
     media: "https://i.ibb.co/s6R7hxQ/image.png",
-    tags: ["generador", "frontend", "astro"],
+    tags: ["framework", "frontend", "astro"],
   },
   {
     name: "Angular",
@@ -64,7 +72,7 @@ export const DOCUMENTATION = [
     name: "React Native",
     url: "https://reactnative.dev/",
     description:
-      "React Native te permite construir aplicaciones móviles utilizando solo JavaScript.",
+      "Permite construir aplicaciones móviles utilizando solo JavaScript.",
     media: "https://i.ibb.co/MDHM5mv/image.png",
     tags: ["biblioteca", "javascript", "frontend", "react native"],
   },
@@ -75,14 +83,6 @@ export const DOCUMENTATION = [
       "Un marco de utilidad de CSS para la creación rápida de interfaces de usuario.",
     media: "https://i.ibb.co/zP1DNkG/image.png",
     tags: ["marco", "css", "frontend", "tailwind"],
-  },
-  {
-    name: "DaisyUI",
-    url: "https://daisyui.com/",
-    description:
-      "DaisyUI es un plugin para Tailwind CSS que te permite diseñar fácilmente interfaces de usuario.",
-    media: "https://i.ibb.co/wwh8cCF/image.png",
-    tags: ["plugin", "css", "frontend", "daisyui"],
   },
   {
     name: "Node.js",

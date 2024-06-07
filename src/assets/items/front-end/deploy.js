@@ -1,26 +1,34 @@
 export const DEPLOY = [
   {
-    name: "Heroku",
-    url: "https://www.heroku.com/",
-    description:
-      "Heroku es una plataforma como servicio (PaaS) que permite a los desarrolladores construir, ejecutar y operar aplicaciones en la nube.",
-    media: "",
-    tags: ["deploy", "gratuito", "heroku"],
-  },
-  {
     name: "Netlify",
     url: "https://www.netlify.com/",
     description:
-      "Netlify es una plataforma de desarrollo web que permite a los desarrolladores construir, desplegar y alojar sitios web y aplicaciones web.",
-    media: "",
-    tags: ["deploy", "gratuito", "netlify"],
+      "Permite a los desarrolladores construir, desplegar y alojar aplicaciones y sitios web estáticos.",
+    media: "https://i.ibb.co/bHRMMJb/image.png",
+    tags: ["frontend", "despliegue", "alojamiento"],
   },
   {
     name: "Vercel",
     url: "https://vercel.com/",
     description:
-      "Vercel es una plataforma en la nube para sitios estáticos y funciones de servidor sin servidor que se adapta a tus necesidades de desarrollo.",
-    media: "",
-    tags: ["deploy", "gratuito", "vercel"],
+      "Vercel es una plataforma cloud para sitios estáticos y aplicaciones de JavaScript.",
+    media: "https://i.ibb.co/Y3Hd9Hy/image.png",
+    tags: ["frontend", "despliegue", "React", "Next.js"],
+  },
+  {
+    name: "Render",
+    url: "https://render.com/",
+    description:
+      "Plataforma de nube unificada para construir y ejecutar todas tus aplicaciones y sitios web.",
+    media: "https://i.ibb.co/6ZdRrxs/image.png",
+    tags: ["frontend", "backend", "despliegue", "cloud"],
+  },
+  {
+    name: "Fleek",
+    url: "https://fleek.co/",
+    description:
+      "Facilita la construcción de sitios y aplicaciones. No se requieren servidores, sitios estáticos escalables.",
+    media: "https://i.ibb.co/w60Ncj4/image.png",
+    tags: ["frontend", "backend", "despliegue", "web abierta"],
   },
 ];

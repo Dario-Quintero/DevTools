@@ -1,7 +1,7 @@
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from "../../Components/Footer/Footer";
-import Body from "../../Components/Body/Body";
-import Frontend from "../../Components/Frontend/Frontend";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Body from "../../components/Body/Body";
+import Frontend from "../../components/Frontend/Frontend";
 
 function ViewHome() {
   return (

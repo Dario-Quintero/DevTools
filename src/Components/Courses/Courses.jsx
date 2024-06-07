@@ -1,32 +1,22 @@
+import React from "react";
 import { useState } from "react";
 import Cards from "../../components/Cards/Cards";
-import { PRACTICE } from "../../assets/items/back-end/practice";
-import { DOCUMENTATION } from "../../assets/items/back-end/documentation";
-import { DATABASE } from "../../assets/items/back-end/database";
-import { DEPLOY } from "../../assets/items/back-end/deploy";
-
-function Backend() {
+import { PLATFORMS } from "../../assets/items/courses/platforms";
+import { VIDEOS } from "../../assets/items/courses/videos"
+function Courses() {
   const BUTTONS = [
     {
-      name: "Bases de datos",
-      items: DATABASE,
+      name: "Plataformas",
+      items: PLATFORMS,
     },
     {
-      name: "Deploy",
-      items: DEPLOY,
-    },
-    {
-      name: "Practica",
-      items: PRACTICE,
-    },
-    {
-      name: "Documentacion",
-      items: DOCUMENTATION,
+      name: "Videos",
+      items: VIDEOS,
     },
   ];
 
-  const [Component, setComponent] = useState(DATABASE);
-  const [Button, setButton] = useState("Bases de datos");
+  const [Component, setComponent] = useState(PLATFORMS);
+  const [Button, setButton] = useState("Plataformas");
 
   const handleComponent = (c) => {
     setComponent(c.items);
@@ -61,4 +51,4 @@ function Backend() {
   );
 }
 
-export default Backend;
+export default Courses;

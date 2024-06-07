@@ -1,15 +1,15 @@
+import Extensions from "../../components/Extensions/Extensions";
 import Navbar from "../../components/Navbar/Navbar";
-import Frontend from "../../components/Frontend/Frontend";
 import Footer from "../../components/Footer/Footer";
 
-function ViewFrontend() {
+function ViewExtensions() {
   return (
     <>
       <Navbar />
-      <Frontend />
+      <Extensions />
       <Footer />
     </>
   );
 }
 
-export default ViewFrontend;
+export default ViewExtensions;
