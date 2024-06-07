@@ -10,7 +10,7 @@ export const CSS = [
     name: "Box Shadows",
     url: "https://box-shadow.dev/",
     description: "Generador de sombras para cajas",
-    media: "https://i.ibb.co/7brMYMB/image.png",
+    media: "https://i.ibb.co/jZjCcGC/image.png",
     tags: [
       "generador",
       "caja",
@@ -18,14 +18,15 @@ export const CSS = [
       "sombras",
       "sombra",
       "css",
-      "Box Shadow",
+      "box shadow",
+      "box shadows"
     ],
   },
   {
     name: "Color Space",
     url: "https://mycolor.space/gradient",
     description: "Generador CSS de colores gradientes",
-    media: "https://i.ibb.co/7brMYMB/image.png",
-    tags: ["generador", "Color Space", "css", "gradiente", "gradientes"],
+    media: "https://i.ibb.co/xF5gdRw/image.png",
+    tags: ["generador", "Color Space", "css", "gradiente", "gradientes","gradient"],
   },
 ];

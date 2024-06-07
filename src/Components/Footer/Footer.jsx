@@ -6,7 +6,7 @@ function Footer() {
       <Link
         to="https://darioquintero.vercel.app/"
         target="_blank"
-        className="hover:bg-sky-100 px-2 py-1"
+        className="hover:bg-black hover:text-white px-2 py-1"
       >
         Dario-Quintero
       </Link>
@@ -14,7 +14,7 @@ function Footer() {
       <Link
         to="https://porfolio-rafael.vercel.app/"
         target="_blank"
-        className="hover:bg-sky-100 px-2 py-1"
+        className="hover:bg-black hover:text-white px-2 py-1"
       >
         RDG-Sanchez
       </Link>
