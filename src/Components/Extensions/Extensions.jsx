@@ -1,9 +1,12 @@
-import React from 'react'
+import Cards from "../Cards/Cards";
+import { EXTENSIONS } from "../../assets/items/extensions/extensions";
 
 function Extensions() {
   return (
-    <div className="text-gray-500">Extensions en proceso...</div>
-  )
+    <div>
+      <Cards items={EXTENSIONS} />
+    </div>
+  );
 }
 
-export default Extensions
+export default Extensions;

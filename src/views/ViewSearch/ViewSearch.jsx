@@ -1,15 +1,16 @@
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-import Home from "../../Components/Home/Home"
+import Search from "../../Components/Search/Search"
 
-function ViewHome() {
+
+function ViewSearch() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Search />
       <Footer />
     </>
-  );
+  )
 }
 
-export default ViewHome;
+export default ViewSearch

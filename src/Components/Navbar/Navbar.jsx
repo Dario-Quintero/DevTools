@@ -2,6 +2,7 @@ import LogoIcon from "../icons/LogoIcon";
 import MenuIcon from "../icons/MenuIcon";
 import { useLocation, Link } from "react-router-dom";
 import { useState } from "react";
+import SearchBar from "./SearchBar/SearchBar";
 
 function MenuResponsive({ view, setView }) {
   const { pathname } = useLocation();
@@ -46,9 +47,9 @@ function MenuResponsive({ view, setView }) {
               Extensiones
             </Link>
             <Link
-              to="/"
+              to="/courses"
               className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
-                pathname === "/"
+                pathname === "/courses"
                   ? "bg-black text-white "
                   : "hover:bg-black/15 hover:text-black"
               }`}
@@ -105,15 +106,16 @@ function Navbar() {
           Extensiones
         </Link>
         <Link
-          to="/"
+          to="/courses"
           className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
-            pathname === "/"
+            pathname === "/courses"
               ? "bg-black text-white dark:bg-white dark:text-black"
               : "hover:bg-black/15 hover:text-black dark:hover:bg-white/5 dark:hover:text-white dark:text-white"
           }`}
         >
           Cursos
         </Link>
+        <SearchBar />
       </div>
       <button
         className="md:hidden font-bold text-3xl text-black"
