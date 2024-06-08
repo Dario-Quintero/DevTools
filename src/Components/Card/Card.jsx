@@ -17,7 +17,7 @@ const Card = ({ article }) => {
             {article?.name}
           </h1>
           <span className="text-xs dark:text-white/70">{`${article?.tags[0]?.toUpperCase()}`}</span>
-        <p className="dark:text-white/90">{article?.description}</p>
+          <p className="dark:text-white/90">{article?.description}</p>
         </div>
         <Link
           to={article?.url}

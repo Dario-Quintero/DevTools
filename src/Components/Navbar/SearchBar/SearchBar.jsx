@@ -48,7 +48,7 @@ function SearchBar() {
         value={input}
         onChange={(e) => handleChange(e)}
         placeholder={placeholder}
-        className="w-48 text-black bg-white border-2 border-transparent focus:bg-black focus:border-white focus:text-white hover:text-white hover:bg-black hover:border-white"
+        className="pl-1 w-32 md:w-48 text-black bg-white border-2 border-transparent focus:bg-black focus:border-white focus:text-white hover:text-white hover:bg-black hover:border-white"
       />
 
       {placeholder != "deploy" ? (
@@ -56,7 +56,7 @@ function SearchBar() {
           {placeholder}
         </p>
       ) : input && (
-        <ul className="absolute max-h-52 overflow-auto w-full bg-white/60  text-black/80 mt-7 p-1 pt-0">
+        <ul className="absolute max-h-52 overflow-auto w-full bg-white/60 text-black/80 mt-7 p-1 pt-0">
           {filteredTags.map((tag, index) => (
             <li key={index}>{tag.toLowerCase()}</li>
           ))}

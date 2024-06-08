@@ -29,7 +29,7 @@ export const DOCUMENTATION = [
     description:
       "JavaScript es un lenguaje de programación interpretado que se utiliza principalmente en el desarrollo web.",
     media: "https://i.ibb.co/h1dS7wj/image.png",
-    tags: ["lenguaje", "backend", "javascript"],
+    tags: ["lenguaje", "backend", "frontend", "javascript"],
   },
   {
     name: "TypeScript",
@@ -53,7 +53,7 @@ export const DOCUMENTATION = [
     description:
       "Node.js es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.",
     media: "https://i.ibb.co/pKKMMh6/image.png",
-    tags: ["entorno", "backend", "node"],
+    tags: ["entorno","frontend", "backend", "node"],
   },
   {
     name: "PostgreSQL",
@@ -61,7 +61,7 @@ export const DOCUMENTATION = [
     description:
       "PostgreSQL es un potente sistema de base de datos relacional de código abierto.",
     media: "https://i.ibb.co/XVbSvKp/image.png",
-    tags: ["base de datos", "backend", "postgresql","sql"],
+    tags: ["base de datos", "backend", "postgresql", "sql", "base", "datos"],
   },
   {
     name: "MongoDB",
@@ -69,7 +69,7 @@ export const DOCUMENTATION = [
     description:
       "MongoDB es una base de datos de documentos, que ofrece escalabilidad y flexibilidad.",
     media: "https://i.ibb.co/LSVnyQf/image.png",
-    tags: ["base de datos", "backend", "mongodb","nosql"],
+    tags: ["base de datos", "backend", "mongodb", "nosql", "base", "datos"],
   },
   {
     name: "Django",

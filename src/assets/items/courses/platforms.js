@@ -5,28 +5,28 @@ export const PLATFORMS = [
     description:
       "Organización sin fines de lucro con una gran comunidad interactiva de aprendizaje, tutoriales y proyectos gratuitos.",
     media: "https://i.ibb.co/2jPHdG8/image.png",
-    tags: ["programación", "gratuito", "interactivo", "gratis"],
+    tags: ["programacion", "gratuito", "interactivo", "gratis"],
   },
   {
     name: "Open Bootcamp",
     url: "https://open-bootcamp.com/",
     description: "Aprende a programar desde cero, completamente gratis",
     media: "https://i.ibb.co/DQqDVHw/image.png",
-    tags: ["programación", "cursos", "interactivo", "gratis"],
+    tags: ["programacion", "cursos", "interactivo", "gratis"],
   },
   {
     name: "Maxi Programa",
     url: "https://maxiprograma.com/",
     description: "Una plataforma para aprender a programar gratis.",
     media: "https://i.ibb.co/3CK14p5/image.png",
-    tags: ["programación", "cursos", "aprendizaje"],
+    tags: ["programacion", "cursos", "aprendizaje"],
   },
   {
     name: "Jon Mircha",
     url: "https://jonmircha.com/",
     description: "Un sitio web con cursos y tutoriales de programación gratis.",
     media: "https://i.ibb.co/r3YS4yc/image.png",
-    tags: ["programación", "cursos", "tutoriales"],
+    tags: ["programacion", "cursos", "tutoriales"],
   },
   {
     name: "Full Stack Open",
@@ -34,7 +34,7 @@ export const PLATFORMS = [
     description:
       "Un curso gratuito que te enseña a construir aplicaciones web de pila completa con JavaScript y React.",
     media: "https://i.ibb.co/GJnmdQ6/image.png",
-    tags: ["programación", "cursos", "full stack", "React", "JavaScript"],
+    tags: ["programacion", "cursos", "full-stack"],
   },
   {
     name: "Soy Henry",
@@ -42,13 +42,13 @@ export const PLATFORMS = [
     description:
       "Academia de programación que ofrece un bootcamp intensivo para convertirte en un desarrollador full stack.",
     media: "https://i.ibb.co/nwcq0xY/image.png",
-    tags: ["programación", "bootcamp", "full stack"],
+    tags: ["programacion", "bootcamp", "full-stack"],
   },
   {
     name: "Codigo Facilito",
     url: "https://codigofacilito.com/",
     description: "Aprende lo que tu carrera como programador necesita.",
     media: "https://i.ibb.co/ZYBDbGV/image.png",
-    tags: ["programación", "cursos", "interactivo"],
+    tags: ["programacion", "cursos", "interactivo"],
   },
 ];

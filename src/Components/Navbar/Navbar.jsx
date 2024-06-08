@@ -67,11 +67,10 @@ function Navbar() {
   const { pathname } = useLocation();
   const [view, setView] = useState(false);
   return (
-    <nav className="flex items-center justify-between gap-10 p-4 bg-white dark:bg-black">
+    <nav className="flex items-center justify-between gap-10 p-4 bg-white dark:bg-black w-full">
       <Link to={"/"}>
         <LogoIcon className="w-8 h-8 text-black dark:text-white" />
       </Link>
-
       <MenuResponsive view={view} setView={setView} />
 
       <div className="hidden md:flex gap-4 items-center">
@@ -117,12 +116,15 @@ function Navbar() {
         </Link>
         <SearchBar />
       </div>
-      <button
-        className="md:hidden font-bold text-3xl text-black"
-        onClick={() => setView(!view)}
-      >
-        <MenuIcon className="w-8 h-8 text-black dark:text-white" />
-      </button>
+      <div className="flex items-center gap-4 md:hidden">
+          <SearchBar />
+        <button
+          className="md:hidden font-bold text-3xl text-black"
+          onClick={() => setView(!view)}
+        >
+          <MenuIcon className="w-8 h-8 text-black dark:text-white" />
+        </button>
+      </div>
     </nav>
   );
 }

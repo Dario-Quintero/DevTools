@@ -5,7 +5,7 @@ function Home() {
   const items = ITEMS.sort((a, b) => a.name.localeCompare(b.name));
 
   const uniqueItems = items.filter(
-    (item, index, self) => index === self.findIndex((t) => t.name === item.name)
+    (item, index, self) => index === self.findIndex((t) => t.url === item.url)
   );
   return (
     <div>

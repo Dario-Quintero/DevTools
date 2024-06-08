@@ -74,7 +74,7 @@ export const DOCUMENTATION = [
     description:
       "Permite construir aplicaciones móviles utilizando solo JavaScript.",
     media: "https://i.ibb.co/MDHM5mv/image.png",
-    tags: ["biblioteca", "javascript", "frontend", "react native"],
+    tags: ["biblioteca", "javascript", "frontend", "react", "native"],
   },
   {
     name: "Tailwind CSS",

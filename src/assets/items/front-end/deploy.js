@@ -5,7 +5,7 @@ export const DEPLOY = [
     description:
       "Permite a los desarrolladores construir, desplegar y alojar aplicaciones y sitios web estáticos.",
     media: "https://i.ibb.co/bHRMMJb/image.png",
-    tags: ["frontend", "despliegue", "alojamiento","deploy"],
+    tags: ["frontend", "despliegue", "alojamiento", "deploy"],
   },
   {
     name: "Vercel",
@@ -13,7 +13,7 @@ export const DEPLOY = [
     description:
       "Vercel es una plataforma cloud para sitios estáticos y aplicaciones de JavaScript.",
     media: "https://i.ibb.co/Y3Hd9Hy/image.png",
-    tags: ["frontend", "despliegue", "react", "next.js","deploy"],
+    tags: ["frontend", "despliegue", "react", "next.js", "deploy"],
   },
   {
     name: "Render",
@@ -21,7 +21,14 @@ export const DEPLOY = [
     description:
       "Plataforma de nube unificada para construir y ejecutar todas tus aplicaciones y sitios web.",
     media: "https://i.ibb.co/6ZdRrxs/image.png",
-    tags: ["frontend", "backend", "despliegue", "cloud","deploy"],
+    tags: [
+      "front-back",
+      "frontend",
+      "backend",
+      "despliegue",
+      "cloud",
+      "deploy",
+    ],
   },
   {
     name: "Fleek",
@@ -29,6 +36,13 @@ export const DEPLOY = [
     description:
       "Facilita la construcción de sitios y aplicaciones estaticas escalables. No se requieren servidores.",
     media: "https://i.ibb.co/w60Ncj4/image.png",
-    tags: ["frontend", "backend", "despliegue", "web abierta","deploy"],
+    tags: [
+      "front-back",
+      "frontend",
+      "backend",
+      "despliegue",
+      "web abierta",
+      "deploy",
+    ],
   },
 ];
