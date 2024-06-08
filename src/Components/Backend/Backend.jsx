@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cards from "../../components/Cards/Cards";
+import Cards from "../Cards/Cards";
 import { PRACTICE } from "../../assets/items/back-end/practice";
 import { DOCUMENTATION } from "../../assets/items/back-end/documentation";
 import { DATABASE } from "../../assets/items/back-end/database";

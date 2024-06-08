@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Cards from "../../components/Cards/Cards";
+import Cards from "../Cards/Cards";
 import { PLATFORMS } from "../../assets/items/courses/platforms";
 import { VIDEOS } from "../../assets/items/courses/videos"
 function Courses() {

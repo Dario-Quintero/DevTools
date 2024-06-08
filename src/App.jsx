@@ -3,7 +3,7 @@ import ViewFrontend from "./views/ViewFrontend/ViewFrontend.jsx";
 import ViewBackend from "./views/ViewBackend/ViewBackend.jsx";
 import ViewExtensions from "./views/ViewExtensions/ViewExtensions.jsx"
 import ViewCourses from "./views/ViewCourses/ViewCourses.jsx";
-import NoPage from "./components/NoPage/NoPage.jsx";
+import NoPage from "./Components/NoPage/NoPage.jsx";
 
 function App() {
   return (

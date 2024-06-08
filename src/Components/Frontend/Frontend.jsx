@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cards from "../../components/Cards/Cards";
+import Cards from "../Cards/Cards";
 import { UXUI } from "../../assets/items/front-end/uxui";
 import { CSS } from "../../assets/items/front-end/css";
 import { PRACTICE } from "../../assets/items/front-end/practice";
