@@ -18,7 +18,7 @@ export const PRACTICE = [
     name: "HackerRank",
     url: "https://www.hackerrank.com/",
     description:
-      "HackerRank es una plataforma de tecnología que ayuda a los programadores a aprender y practicar habilidades de codificación.",
+      "Plataforma de tecnología para aprender y practicar habilidades de codificación.",
     media: "https://i.ibb.co/0jFYXWN/image.png",
     tags: ["programación", "lógica", "entrevistas"],
   },
@@ -34,7 +34,7 @@ export const PRACTICE = [
     name: "Edabit",
     url: "https://edabit.com/",
     description:
-      "Edabit ofrece una forma rápida y efectiva de aprender a programar. Con desafíos de codificación que se asemejan a preguntas de entrevistas de trabajo.",
+      "Edabit ofrece desafíos de codificación que se asemejan a preguntas de entrevistas de trabajo.",
     media: "https://i.ibb.co/B3Brywf/image.png",
     tags: ["programación", "lógica", "desafíos"],
   },
@@ -42,7 +42,7 @@ export const PRACTICE = [
     name: "Project Euler",
     url: "https://projecteuler.net/",
     description:
-      "Project Euler es una serie de desafíos matemáticos y computacionales que requerirán más que solo habilidades matemáticas para resolver.",
+      "Desafíos matemáticos y computacionales que requerirán más que solo habilidades matemáticas para resolver.",
     media: "https://i.ibb.co/ngz6QBf/image.png",
     tags: ["programación", "lógica", "matemáticas"],
   },

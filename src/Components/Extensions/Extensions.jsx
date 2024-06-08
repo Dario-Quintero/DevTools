@@ -2,7 +2,7 @@ import React from 'react'
 
 function Extensions() {
   return (
-    <div className="text-black">Extensions en proceso...</div>
+    <div className="text-gray-500">Extensions en proceso...</div>
   )
 }
 

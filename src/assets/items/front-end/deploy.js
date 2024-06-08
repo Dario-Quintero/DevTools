@@ -27,7 +27,7 @@ export const DEPLOY = [
     name: "Fleek",
     url: "https://fleek.co/",
     description:
-      "Facilita la construcción de sitios y aplicaciones. No se requieren servidores, sitios estáticos escalables.",
+      "Facilita la construcción de sitios y aplicaciones estaticas escalables. No se requieren servidores.",
     media: "https://i.ibb.co/w60Ncj4/image.png",
     tags: ["frontend", "backend", "despliegue", "web abierta"],
   },
