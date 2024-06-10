@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 
 function Cards({ items }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(10);
+  const [itemsPerPage] = useState(8);
 
   // Obtener los items actuales a mostrar
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -20,14 +20,14 @@ function Cards({ items }) {
   }, [items]);
 
   return (
-    <div className="flex flex-col items-center gap-4 pb-16">
-      <div className="flex gap-4 flex-wrap justify-center">
+    <div className="flex flex-col items-center gap-4 pb-10 w-full ">
+      <div className="flex gap-4 flex-wrap justify-center max-w-[1300px]">
         {currentItems?.map((c, index) => (
           <Card article={c} key={index} />
         ))}
       </div>
       {items.length / itemsPerPage > 1 && ( // Si solo hay una pagina para mostrar, no renderiza las demas paginas
-        <div className="flex gap-1">
+        <div className="flex gap-1 ">
           {[...Array(Math.ceil(items.length / itemsPerPage))].map((e, i) => (
             <button
               onClick={() => {

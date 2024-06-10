@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ article }) => {
   return (
-    <div className="text-black bg-white dark:bg-black border dark:border-white/20 rounded-lg w-72 my-5 overflow-hidden">
+    <div className="text-black bg-white dark:bg-black border dark:border-white/20 rounded-lg w-72 mt-2 overflow-hidden">
       <div className="w-full h-[40%]">
         <img
           className="object-fit object-cover w-full h-full hover:scale-[105%] transition-all"

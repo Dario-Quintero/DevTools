@@ -15,14 +15,7 @@ export const DOCUMENTATION = [
     media: "https://i.ibb.co/whW8kpL/image.png",
     tags: ["lenguaje", "backend", "java"],
   },
-  {
-    name: "C#",
-    url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
-    description:
-      "C# es un lenguaje de programación moderno, orientado a objetos y desarrollado por Microsoft.",
-    media: "https://i.ibb.co/1GRGmr3/image.png",
-    tags: ["lenguaje", "backend", "c#"],
-  },
+
   {
     name: "JavaScript",
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -53,7 +46,7 @@ export const DOCUMENTATION = [
     description:
       "Node.js es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.",
     media: "https://i.ibb.co/pKKMMh6/image.png",
-    tags: ["entorno","frontend", "backend", "node"],
+    tags: ["entorno", "frontend", "backend", "node"],
   },
   {
     name: "PostgreSQL",
@@ -92,7 +85,7 @@ export const DOCUMENTATION = [
     description:
       "Spring Boot facilita la creación de aplicaciones Spring basadas en Java independientes.",
     media: "https://i.ibb.co/C0bQS8C/image.png",
-    tags: ["marco", "backend", "spring boot"],
+    tags: ["marco", "backend", "spring boot", "spring", "boot"],
   },
   {
     name: ".NET",
@@ -101,5 +94,13 @@ export const DOCUMENTATION = [
       ".NET es un marco gratuito y de código abierto para la creación de aplicaciones modernas.",
     media: "https://i.ibb.co/Ykj6GWT/image.png",
     tags: ["marco", "backend", ".net"],
+  },
+  {
+    name: "C#",
+    url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+    description:
+      "C# es un lenguaje de programación moderno, orientado a objetos y desarrollado por Microsoft.",
+    media: "https://i.ibb.co/1GRGmr3/image.png",
+    tags: ["lenguaje", "backend", "c#"],
   },
 ];

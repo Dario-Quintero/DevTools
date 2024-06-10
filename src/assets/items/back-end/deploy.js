@@ -5,7 +5,7 @@ export const DEPLOY = [
     description:
       "Plataforma como servicio (PaaS) que permite a los desarrolladores construir, ejecutar y operar aplicaciones en la nube.",
     media: "https://i.ibb.co/hcgM2Bm/image.png",
-    tags: ["backend", "despliegue", "paas", "deploy"],
+    tags: ["backend", "despliegue", "paas", "deploy","heroku"],
   },
   {
     name: "Fly.io",
@@ -13,7 +13,7 @@ export const DEPLOY = [
     description:
       "Fly.io es una plataforma de despliegue para aplicaciones Docker.",
     media: "https://i.ibb.co/w07pwd7/image.png",
-    tags: ["backend", "despliegue", "docker", "deploy"],
+    tags: ["backend", "despliegue", "docker", "deploy","fly","fly.io"],
   },
   {
     name: "Koyeb",
@@ -21,7 +21,7 @@ export const DEPLOY = [
     description:
       "Koyeb es una plataforma de despliegue global para aplicaciones web, APIs y microservicios.",
     media: "https://i.ibb.co/XthBg5G/image.png",
-    tags: ["backend", "despliegue", "microservicios", "deploy"],
+    tags: ["backend", "despliegue", "microservicios", "deploy","koyeb"],
   },
   {
     name: "Qovery",
@@ -29,7 +29,7 @@ export const DEPLOY = [
     description:
       "Qovery es una plataforma que permite a los desarrolladores desplegar sus aplicaciones en cualquier nube en segundos.",
     media: "https://i.ibb.co/H7V0Cqc/image.png",
-    tags: ["backend", "despliegue", "cloud", "deploy"],
+    tags: ["backend", "despliegue", "cloud", "deploy","qovery"],
   },
   {
     name: "Render",
@@ -44,6 +44,7 @@ export const DEPLOY = [
       "despliegue",
       "cloud",
       "deploy",
+      "render"
     ],
   },
   {
@@ -59,6 +60,7 @@ export const DEPLOY = [
       "despliegue",
       "web abierta",
       "deploy",
+      "fleek"
     ],
   },
 ];
