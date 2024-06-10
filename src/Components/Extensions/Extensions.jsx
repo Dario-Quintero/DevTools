@@ -3,7 +3,7 @@ import { EXTENSIONS } from "../../assets/items/extensions/extensions";
 
 function Extensions() {
   return (
-    <div className="bg-white dark:bg-black w-screen h-screen md:min-h-screen">
+    <div className="bg-white dark:bg-black w-screen h-full md:min-h-screen">
       <Cards items={EXTENSIONS} />
     </div>
   );
