@@ -42,7 +42,7 @@ function Frontend() {
   };
 
   return (
-    <div className="bg-white dark:bg-black h-full md:h-screen">
+    <div className="bg-white dark:bg-black h-full md:min-h-screen">
       <div className="flex justify-center gap-2 w-full flex-wrap px-1">
         {BUTTONS.map((b, index) => (
           <button
