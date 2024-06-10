@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SearchIcon from "../../icons/SearchIcon";
 import { useNavigate } from "react-router-dom";
 import { ITEMS, TAGS } from "../../../assets/items/items";
 
@@ -35,6 +36,7 @@ function SearchBar() {
       setPlaceholder("Ingrese un tag valido");
     }
   };
+
   useEffect(() => {
     setTimeout(() => {
       setPlaceholder("deploy");
@@ -43,24 +45,29 @@ function SearchBar() {
 
   return (
     <form className="flex flex-col relative" onSubmit={(e) => handleSubmit(e)}>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => handleChange(e)}
-        placeholder={placeholder}
-        className="pl-1 w-32 md:w-48 text-black bg-white border-2 border-transparent focus:bg-black focus:border-white focus:text-white hover:text-white hover:bg-black hover:border-white"
-      />
+      <div className="flex gap-2 items-center px-4 py-2  border-2 border-black/20 dark:border-white/20 outline-none focus:border-black dark:focus:border-white transition-all">
+        <SearchIcon className="w-6 h-6 text-black/50 dark:text-white/50"/>
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => handleChange(e)}
+          placeholder={placeholder}
+          className="w-40 text-black dark:text-white bg-transparent outline-none"
+        />
+      </div>
 
       {placeholder != "deploy" ? (
-        <p className=" absolute bg-white/20 w-full mt-6 p-1 text-red-600">
+        <p className=" absolute bg-white/20 w-full mt-11 p-1 text-red-600">
           {placeholder}
         </p>
-      ) : input && (
-        <ul className="absolute max-h-52 overflow-auto w-full bg-white/60 text-black/80 mt-7 p-1 pt-0">
-          {filteredTags.map((tag, index) => (
-            <li key={index}>{tag.toLowerCase()}</li>
-          ))}
-        </ul>
+      ) : (
+        input && (
+          <ul className="absolute max-h-52 overflow-auto w-full bg-white/60 text-black/80 mt-11 p-1 pt-0">
+            {filteredTags.map((tag, index) => (
+              <li key={index}>{tag.toLowerCase()}</li>
+            ))}
+          </ul>
+        )
       )}
     </form>
   );

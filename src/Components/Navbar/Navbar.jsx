@@ -3,6 +3,7 @@ import MenuIcon from "../icons/MenuIcon";
 import { useLocation, Link } from "react-router-dom";
 import { useState } from "react";
 import SearchBar from "./SearchBar/SearchBar";
+import ToggleTheme from "./ToggleTheme/ToggleTheme";
 
 function MenuResponsive({ view, setView }) {
   const { pathname } = useLocation();
@@ -21,7 +22,7 @@ function MenuResponsive({ view, setView }) {
               className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
                 pathname === "/front-end"
                   ? "bg-black text-white"
-                  : "hover:bg-black/15 hover:text-black"
+                  : "hover:bg-slate-400/5 hover:text-black "
               }`}
             >
               Front-End
@@ -30,8 +31,8 @@ function MenuResponsive({ view, setView }) {
               to="/back-end"
               className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
                 pathname === "/back-end"
-                  ? "bg-black text-white "
-                  : "hover:bg-black/15 hover:text-black"
+                  ? "bg-black text-white"
+                  : "hover:bg-slate-400/5 hover:text-black "
               }`}
             >
               Back-End
@@ -40,8 +41,8 @@ function MenuResponsive({ view, setView }) {
               to="/extensions"
               className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
                 pathname === "/extensions"
-                  ? "bg-black text-white "
-                  : "hover:bg-black/15 hover:text-black"
+                  ? "bg-black text-white"
+                  : "hover:bg-slate-400/5 hover:text-black "
               }`}
             >
               Extensiones
@@ -50,8 +51,8 @@ function MenuResponsive({ view, setView }) {
               to="/courses"
               className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
                 pathname === "/courses"
-                  ? "bg-black text-white "
-                  : "hover:bg-black/15 hover:text-black"
+                  ? "bg-black text-white"
+                  : "hover:bg-slate-400/5 hover:text-black "
               }`}
             >
               Cursos
@@ -79,7 +80,7 @@ function Navbar() {
           className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
             pathname === "/front-end"
               ? "bg-black text-white dark:bg-white dark:text-black"
-              : "hover:bg-black/15 hover:text-black dark:hover:bg-white/5 dark:hover:text-white dark:text-white"
+              : "hover:bg-slate-400/5 hover:text-black dark:hover:bg-white/5 dark:text-white"
           }`}
         >
           Front-End
@@ -89,7 +90,7 @@ function Navbar() {
           className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
             pathname === "/back-end"
               ? "bg-black text-white dark:bg-white dark:text-black"
-              : "hover:bg-black/15 hover:text-black dark:hover:bg-white/5 dark:hover:text-white dark:text-white"
+              : "hover:bg-slate-400/5 hover:text-black dark:hover:bg-white/5 dark:text-white"
           }`}
         >
           Back-End
@@ -99,7 +100,7 @@ function Navbar() {
           className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
             pathname === "/extensions"
               ? "bg-black text-white dark:bg-white dark:text-black"
-              : "hover:bg-black/15 hover:text-black dark:hover:bg-white/5 dark:hover:text-white dark:text-white"
+              : "hover:bg-slate-400/5 hover:text-black dark:hover:bg-white/5 dark:text-white"
           }`}
         >
           Extensiones
@@ -109,15 +110,17 @@ function Navbar() {
           className={`font-semibold text-sm text-black px-4 py-2 transition-all ${
             pathname === "/courses"
               ? "bg-black text-white dark:bg-white dark:text-black"
-              : "hover:bg-black/15 hover:text-black dark:hover:bg-white/5 dark:hover:text-white dark:text-white"
+              : "hover:bg-slate-400/5 hover:text-black dark:hover:bg-white/5 dark:text-white"
           }`}
         >
           Cursos
         </Link>
         <SearchBar />
+        <ToggleTheme />
       </div>
       <div className="flex items-center gap-4 md:hidden">
-          <SearchBar />
+        <SearchBar />
+        <ToggleTheme />
         <button
           className="md:hidden font-bold text-3xl text-black"
           onClick={() => setView(!view)}

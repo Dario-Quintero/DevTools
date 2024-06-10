@@ -42,15 +42,15 @@ function Frontend() {
   };
 
   return (
-    <div>
-      <div className="flex justify-center gap-2 w-full flex-wrap px-10">
+    <div className="bg-white dark:bg-black h-full md:h-screen">
+      <div className="flex justify-center gap-2 w-full flex-wrap px-1">
         {BUTTONS.map((b, index) => (
           <button
             key={index}
-            className={`px-4 py-2 border border-white/20 rounded-md transition-all text-black text-sm ${
+            className={`px-4 py-2 border dark:border-white/20 rounded-md transition-all text-black text-sm ${
               Button === b.name
                 ? "bg-black text-white dark:bg-white dark:text-black"
-                : "hover:bg-black/15 hover:text-white dark:hover:bg-white/5 dark:text-white"
+                : "hover:bg-slate-400/5 hover:text-black dark:hover:bg-white/5 dark:text-white"
             }`}
             onClick={() => {
               handleComponent(b);

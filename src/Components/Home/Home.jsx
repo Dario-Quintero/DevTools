@@ -8,7 +8,7 @@ function Home() {
     (item, index, self) => index === self.findIndex((t) => t.url === item.url)
   );
   return (
-    <div>
+    <div className="bg-white dark:bg-black h-full md:h-screen">
       <Cards items={uniqueItems} />
     </div>
   );
