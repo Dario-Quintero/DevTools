@@ -13,7 +13,7 @@ function MenuResponsive({ view, setView }) {
     return (
       <div
         onClick={() => setView(!view)}
-        className="w-screen h-screen flex flex-col fixed top-0 left-0 bg-black/50 backdrop-blur-sm z-50"
+        className="w-full h-screen flex flex-col fixed top-0 left-0 bg-black/50 backdrop-blur-sm z-50"
       >
         <div className="w-full bg-white px-4 py-4 relative rounded-md shadow-sm">
           <div className="flex flex-col gap-4">
@@ -68,10 +68,11 @@ function Navbar() {
   const { pathname } = useLocation();
   const [view, setView] = useState(false);
   return (
-    <nav className="flex items-center justify-between gap-10 p-4 bg-white dark:bg-black w-full">
+    <nav className="flex items-center justify-between gap-4 p-4 bg-white dark:bg-black w-full">
       <Link to={"/"}>
         <LogoIcon className="w-8 h-8 text-black dark:text-white" />
       </Link>
+
       <MenuResponsive view={view} setView={setView} />
 
       <div className="hidden md:flex gap-4 items-center">
@@ -118,6 +119,7 @@ function Navbar() {
         <SearchBar />
         <ToggleTheme />
       </div>
+
       <div className="flex items-center gap-4 md:hidden">
         <SearchBar />
         <ToggleTheme />
@@ -128,6 +130,7 @@ function Navbar() {
           <MenuIcon className="w-8 h-8 text-black dark:text-white" />
         </button>
       </div>
+
     </nav>
   );
 }

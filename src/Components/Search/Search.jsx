@@ -5,7 +5,7 @@ function Search() {
   const location = useLocation();
   const items = location.state.items;
   return (
-    <div className="bg-white dark:bg-black w-screen md:min-h-screen">
+    <div className="bg-white dark:bg-black">
       <Cards items={items} />
     </div>
   );

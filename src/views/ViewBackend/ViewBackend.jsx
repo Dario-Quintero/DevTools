@@ -4,11 +4,11 @@ import Footer from "../../Components/Footer/Footer";
 
 function ViewBackend() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <Backend />
       <Footer />
-    </>
+    </div>
   );
 }
 

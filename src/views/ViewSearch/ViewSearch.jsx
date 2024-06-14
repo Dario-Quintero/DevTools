@@ -5,11 +5,11 @@ import Search from "../../Components/Search/Search"
 
 function ViewSearch() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <Search />
       <Footer />
-    </>
+    </div>
   )
 }
 

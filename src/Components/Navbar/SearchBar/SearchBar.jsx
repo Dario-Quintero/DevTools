@@ -48,15 +48,16 @@ function SearchBar() {
   }, [placeholder]);
 
   return (
-    <form className="flex flex-col relative" onSubmit={(e) => handleSubmit(e)}>
-      <div className="flex gap-2 items-center px-4 py-2  border-2 border-black/20 dark:border-white/20 outline-none focus:border-black dark:focus:border-white transition-all">
+    <form className="flex flex-col relative w-full md:w-56" onSubmit={(e) => handleSubmit(e)}>
+      <div className="flex gap-2 items-center px-4 py-2 border-2 border-black/20 dark:border-white/20 outline-none focus:border-black dark:focus:border-white transition-all">
         <SearchIcon className="w-6 h-6 text-black/50 dark:text-white/50" />
         <input
           type="text"
           value={input}
+          // list="tags-list"
           onChange={(e) => handleChange(e)}
           placeholder={placeholder}
-          className="w-40 text-black dark:text-white bg-transparent outline-none"
+          className="w-full md:w-40 text-black dark:text-white bg-transparent outline-none"
           onBlur={() => setFocus(false)}
         />
       </div>
@@ -83,3 +84,16 @@ function SearchBar() {
 }
 
 export default SearchBar;
+
+
+// focus && (
+//   <datalist id="tags-list" className="absolute max-h-52 overflow-auto w-full flex flex-col gap-2 bg-white text-black/80 mt-11 p-1 z-99 rounded-bl-lg rounded-br-lg shadow-xl">
+//     {filteredTags.length === 0 ? (
+//       <option value="No hay coincidencias." />
+//     ) : (
+//       filteredTags.map((tag, index) => (
+//         <option key={index} value={tag.toLowerCase()} />
+//       ))
+//     )}
+//   </datalist>
+// )

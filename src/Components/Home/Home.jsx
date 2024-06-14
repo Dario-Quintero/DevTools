@@ -7,8 +7,9 @@ function Home() {
   const uniqueItems = items.filter(
     (item, index, self) => index === self.findIndex((t) => t.url === item.url)
   );
+
   return (
-    <div className="bg-white dark:bg-black h-full md:min-h-screen">
+    <div className="bg-white dark:bg-black px-10 max-w-[90rem] mx-auto">
       <Cards items={uniqueItems} />
     </div>
   );

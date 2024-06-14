@@ -11,21 +11,23 @@ import NoPage from "./Components/NoPage/NoPage.jsx";
 function App() {
   useEffect(() => {
     const html = document.querySelector("html");
-    html.setAttribute("data-mode", "dark")
+    html.setAttribute("data-mode", "dark");
   }, []);
 
   return (
-    <Routes>
-      <Route path="/">
-        <Route index element={<ViewHome />} />
-        <Route path="/front-end" element={<ViewFrontend />} />
-        <Route path="/back-end" element={<ViewBackend />} />
-        <Route path="/extensions" element={<ViewExtensions />} />
-        <Route path="/courses" element={<ViewCourses />} />
-        <Route path="/search" element={<ViewSearch />} />
-        <Route path="*" element={<NoPage />} />
-      </Route>
-    </Routes>
+    <div className="bg-white dark:bg-black">
+      <Routes>
+        <Route path="/">
+          <Route index element={<ViewHome />} />
+          <Route path="/front-end" element={<ViewFrontend />} />
+          <Route path="/back-end" element={<ViewBackend />} />
+          <Route path="/extensions" element={<ViewExtensions />} />
+          <Route path="/courses" element={<ViewCourses />} />
+          <Route path="/search" element={<ViewSearch />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </div>
   );
 }
 

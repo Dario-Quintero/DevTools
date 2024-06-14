@@ -37,8 +37,8 @@ function Backend() {
   };
 
   return (
-    <div className="bg-white dark:bg-black w-screen h-full md:min-h-screen">
-      <div className="flex justify-center gap-2 w-full flex-wrap px-10">
+    <div className="bg-white dark:bg-black">
+      <div className="w-full flex justify-center gap-2 flex-wrap py-4">
         {BUTTONS.map((b, index) => (
           <button
             key={index}

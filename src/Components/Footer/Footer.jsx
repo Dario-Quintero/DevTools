@@ -1,23 +1,26 @@
-import { Link } from "react-router-dom";
-
 function Footer() {
   return (
-    <footer className="flex justify-evenly w-full text-black bg-white dark:text-white dark:bg-black h-5 sm:h-8 font-semibold items-center fixed bottom-0">
-      <Link
-        to="https://darioquintero.vercel.app/"
-        target="_blank"
-        className="text-xs sm:text-md lg:text-lg hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white px-2 py-1"
-      >
-        Dario-Quintero
-      </Link>
-      <p className="text-xs sm:text-md lg:text-lg">DevTools</p>
-      <Link
-        to="https://porfolio-rafael.vercel.app/"
-        target="_blank"
-        className="text-xs sm:text-md lg:text-lg hover:bg-black hover:text-white  dark:hover:text-black dark:hover:bg-white px-2 py-1"
-      >
-        RDG-Sanchez
-      </Link>
+    <footer className="w-full flex flex-col md:flex-row md:justify-between gap-2 items-center text-black bg-white dark:text-white dark:bg-black py-4 px-8 mt-auto">
+      <span className="text-sm">@ 2024 - DevTools</span>
+      <div className="flex flex-row gap-2 items-center">
+        <span className="text-sm">Desarrollado por:</span>
+        <span className="flex gap-2">
+          <a
+            href="https://darioquintero.vercel.app/"
+            target="_blank"
+            className="text-sm hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white px-1"
+          >
+            Dario-Quintero
+          </a>
+          <a
+            href="https://porfolio-rafael.vercel.app/"
+            target="_blank"
+            className="text-sm hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white px-1"
+          >
+            RDG-Sanchez
+          </a>
+        </span>
+      </div>
     </footer>
   );
 }
