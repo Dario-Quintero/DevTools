@@ -155,7 +155,7 @@ function Navbar() {
       <div className="flex md:hidden gap-2 items-center">
         <ToggleTheme />
         <MenuIcon
-          className="w-8 h-8 text-black dark:text-white"
+          className="w-8 h-8 text-black dark:text-white cursor-pointer"
           onClick={() => setView(!view)}
         />
       </div>
