@@ -20,7 +20,6 @@ function Cards({ items }) {
 
   return (
     <div className="flex flex-col items-center gap-10 w-full">
-
       <div className="grid md:grid-cols-4 gap-4">
         {currentItems?.map((c, index) => (
           <Card article={c} key={index} />
@@ -28,26 +27,25 @@ function Cards({ items }) {
       </div>
 
       {items.length / itemsPerPage > 1 && ( // Si solo hay una pagina para mostrar, no renderiza las demas paginas
-        <div className="flex gap-x-1 gap-y-2 flex-wrap justify-center px-2">
+        <ul className="flex flex-wrap h-fit justify-center max-w-fit relative gap-2 items-center overflow-visible rounded-md">
           {[...Array(Math.ceil(items.length / itemsPerPage))].map((e, i) => (
-            <button
+            <li
               onClick={() => {
                 paginate(i + 1);
                 window.scrollTo(0, 0);
               }}
               key={i}
-              className={`border border-black/30 dark:border-white/30 text-center px-3 py-1 rounded-md ${
+              className={`select-none cursor-pointer flex flex-wrap box-border items-center justify-center shadow-sm min-w-9 w-9 h-9 text-sm rounded-md ${
                 currentPage == i + 1
-                  ? "bg-black text-white dark:bg-white dark:text-black"
-                  : "text-black dark:text-white"
+                  ? "bg-blue-600 text-white"
+                  : "text-black dark:text-white hover:bg-black/10 hover:dark:bg-white/10 transition-all"
               }`}
             >
               {i + 1}
-            </button>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
-
     </div>
   );
 }
