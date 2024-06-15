@@ -65,12 +65,13 @@ function SearchBar() {
       </div>
 
       {placeholder != "Buscar por tags" ? (
-        <span className="absolute max-h-52 overflow-auto w-full flex flex-col gap-3 bg-black/5 dark:bg-white/5 text-red-500 mt-11 p-4 z-99 rounded-lg backdrop-blur-md">
+        <span className="absolute max-h-52 overflow-auto w-full flex flex-col gap-3 bg-white/70 dark:bg-black/70 backdrop-blur-xl shadow-lg text-red-500 mt-11 p-4 z-99 rounded-lg">
           {placeholder}
         </span>
       ) : (
         focus && (
-          <ul className="absolute max-h-52 overflow-auto w-full flex flex-col gap-3 bg-black/5 dark:bg-white/5 text-black dark:text-black dark:text-white/80 mt-11 p-4 z-99 rounded-lg backdrop-blur-md">
+          // <ul className="absolute max-h-52 overflow-auto w-full flex flex-col gap-3 text-black dark:text-white bg-white/70 dark:bg-black/70 backdrop-blur-xl shadow-lg mt-11 p-4 z-99 rounded-lg">
+          <ul className="absolute max-h-52 mt-11 p-4 z-99 overflow-auto w-full flex flex-col gap-3 rounded-lg backdrop-blur-xl shadow-lg bg-black/5 text-black dark:bg-white/5 dark:text-white md:bg-white/70 md:dark:bg-black/70">
             {filteredTags.length === 0 ? (
               <li>No hay coincidencias.</li>
             ) : (
