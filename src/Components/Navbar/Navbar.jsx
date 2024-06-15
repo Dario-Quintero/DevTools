@@ -31,10 +31,10 @@ function MenuResponsive({ view, setView }) {
             <li>
               <Link
                 to="/front-end"
-                className={`text-black text-sm dark:text-white/70 transition-all ${
+                className={`transition-all ${
                   pathname === "/front-end"
-                    ? "text-blue-500 dark:text-blue-500 font-bold"
-                    : "font-medium dark:hover:text-white"
+                    ? "text-blue-500 font-bold"
+                    : "font-medium dark:hover:text-white text-black dark:text-white/70"
                 }`}
               >
                 Front-End
@@ -43,10 +43,10 @@ function MenuResponsive({ view, setView }) {
             <li>
               <Link
                 to="/back-end"
-                className={`text-black text-sm dark:text-white/70 transition-all ${
+                className={`transition-all ${
                   pathname === "/back-end"
-                    ? "text-blue-500 dark:text-blue-500 font-bold"
-                    : "font-medium dark:hover:text-white"
+                    ? "text-blue-500 font-bold"
+                    : "font-medium dark:hover:text-white text-black dark:text-white/70"
                 }`}
               >
                 Back-End
@@ -55,10 +55,10 @@ function MenuResponsive({ view, setView }) {
             <li>
               <Link
                 to="/extensions"
-                className={`text-black text-sm dark:text-white/70 transition-all ${
+                className={`transition-all ${
                   pathname === "/extensions"
-                    ? "text-blue-500 dark:text-blue-500 font-bold"
-                    : "font-medium dark:hover:text-white"
+                    ? "text-blue-500 font-bold"
+                    : "font-medium dark:hover:text-white text-black dark:text-white/70"
                 }`}
               >
                 Extensiones
@@ -67,10 +67,10 @@ function MenuResponsive({ view, setView }) {
             <li>
               <Link
                 to="/courses"
-                className={`text-black text-sm dark:text-white/70 transition-all ${
+                className={`transition-all ${
                   pathname === "/courses"
-                    ? "text-blue-500 dark:text-blue-500 font-bold"
-                    : "font-medium dark:hover:text-white"
+                    ? "text-blue-500 font-bold"
+                    : "font-medium dark:hover:text-white text-black dark:text-white/70"
                 }`}
               >
                 Cursos
@@ -99,10 +99,10 @@ function Navbar() {
           <li>
             <Link
               to="/front-end"
-              className={` text-black dark:text-white/70 transition-all ${
+              className={` transition-all ${
                 pathname === "/front-end"
-                  ? "text-blue-500 dark:text-blue-500 font-bold"
-                  : "font-medium dark:hover:text-white"
+                  ? "text-blue-500 font-bold"
+                  : "font-medium dark:hover:text-white text-black dark:text-white/70"
               }`}
             >
               Front-End
@@ -111,10 +111,10 @@ function Navbar() {
           <li>
             <Link
               to="/back-end"
-              className={` text-black dark:text-white/70 transition-all ${
+              className={` transition-all ${
                 pathname === "/back-end"
-                  ? "text-blue-500 dark:text-blue-500 font-bold"
-                  : "font-medium dark:hover:text-white"
+                  ? "text-blue-500 font-bold"
+                  : "font-medium dark:hover:text-white text-black dark:text-white/70"
               }`}
             >
               Back-End
@@ -123,10 +123,10 @@ function Navbar() {
           <li>
             <Link
               to="/extensions"
-              className={` text-black dark:text-white/70 transition-all ${
+              className={` transition-all ${
                 pathname === "/extensions"
-                  ? "text-blue-500 dark:text-blue-500 font-bold"
-                  : "font-medium dark:hover:text-white"
+                  ? "text-blue-500 font-bold"
+                  : "font-medium dark:hover:text-white text-black dark:text-white/70"
               }`}
             >
               Extensiones
@@ -135,10 +135,10 @@ function Navbar() {
           <li>
             <Link
               to="/courses"
-              className={` text-black dark:text-white/70 transition-all ${
+              className={` transition-all ${
                 pathname === "/courses"
-                  ? "text-blue-500 dark:text-blue-500 font-bold"
-                  : "font-medium dark:hover:text-white"
+                  ? "text-blue-500 font-bold"
+                  : "font-medium dark:hover:text-white text-black dark:text-white/70"
               }`}
             >
               Cursos

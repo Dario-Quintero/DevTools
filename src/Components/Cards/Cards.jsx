@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 
 function Cards({ items }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(8);
+  const [itemsPerPage] = useState(10);
 
   // Obtener los items actuales a mostrar
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -20,7 +20,7 @@ function Cards({ items }) {
 
   return (
     <div className="flex flex-col items-center gap-10 w-full">
-      <div className="grid md:grid-cols-4 gap-4">
+      <div className="flex flex-wrap justify-center gap-4">
         {currentItems?.map((c, index) => (
           <Card article={c} key={index} />
         ))}

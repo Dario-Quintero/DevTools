@@ -1,8 +1,10 @@
-import React from "react";
-import { useState } from "react";
 import Cards from "../Cards/Cards";
+import Select from "../Select/Select";
+
+import { useState } from "react";
 import { PLATFORMS } from "../../assets/items/courses/platforms";
 import { VIDEOS } from "../../assets/items/courses/videos";
+
 function Courses() {
   const BUTTONS = [
     {
@@ -16,36 +18,14 @@ function Courses() {
   ];
 
   const [Component, setComponent] = useState(PLATFORMS);
-  const [Button, setButton] = useState("Plataformas");
 
   const handleComponent = (c) => {
     setComponent(c.items);
   };
 
-  const handleButton = (c) => {
-    setButton(c.name);
-  };
-
   return (
-    <div className="bg-white dark:bg-black w-screen h-full md:min-h-screen">
-      <div className="flex justify-center gap-2 w-full flex-wrap px-10">
-        {BUTTONS.map((b, index) => (
-          <button
-            key={index}
-            className={`px-4 py-2 border dark:border-white/20 rounded-md transition-all text-black text-sm ${
-              Button === b.name
-                ? "bg-black text-white dark:bg-white dark:text-black"
-                : "hover:bg-slate-400/5 hover:text-black dark:hover:bg-white/5 dark:text-white"
-            }`}
-            onClick={() => {
-              handleComponent(b);
-              handleButton(b);
-            }}
-          >
-            <span>{b.name}</span>
-          </button>
-        ))}
-      </div>
+    <div className="bg-white dark:bg-black flex flex-col items-center gap-5">
+      <Select options={BUTTONS} handleComponent={handleComponent} />
       <Cards items={Component} />
     </div>
   );
