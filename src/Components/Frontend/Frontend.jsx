@@ -39,7 +39,7 @@ function Frontend() {
   };
 
   return (
-    <div className="bg-white dark:bg-black flex flex-col items-center gap-5">
+    <div className="flex flex-col items-center gap-5 bg-white dark:bg-black mx-10 h-full">
       <Select options={BUTTONS} handleComponent={handleComponent} />
       <Cards items={Component} />
     </div>

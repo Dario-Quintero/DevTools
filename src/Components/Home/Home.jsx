@@ -9,7 +9,7 @@ function Home() {
   );
 
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex flex-col items-center gap-5 bg-white dark:bg-black mx-10">
       <Cards items={uniqueItems} />
     </div>
   );

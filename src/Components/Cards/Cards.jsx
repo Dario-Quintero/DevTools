@@ -19,7 +19,7 @@ function Cards({ items }) {
   }, [items]);
 
   return (
-    <div className="flex flex-col items-center gap-10 w-full">
+    <div className="flex flex-col items-center gap-10 w-full min-h-min">
       <div className="flex flex-wrap justify-center gap-4">
         {currentItems?.map((c, index) => (
           <Card article={c} key={index} />
@@ -27,7 +27,7 @@ function Cards({ items }) {
       </div>
 
       {items.length / itemsPerPage > 1 && ( // Si solo hay una pagina para mostrar, no renderiza las demas paginas
-        <ul className="flex flex-wrap h-fit justify-center max-w-fit relative gap-2 items-center overflow-visible rounded-md">
+        <ul className="flex flex-wrap h-fit justify-center max-w-fit relative gap-2 items-center overflow-visible rounded-md mt-auto">
           {[...Array(Math.ceil(items.length / itemsPerPage))].map((e, i) => (
             <li
               onClick={() => {
