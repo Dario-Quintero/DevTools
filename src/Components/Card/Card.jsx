@@ -6,7 +6,7 @@ const Card = ({ article }) => {
     <article className="flex flex-col gap-4 items-start border border-white/25 w-[20rem] h-full rounded-lg overflow-hidden relative group">
       <div className="relative w-full">
         <Link
-          className="flex gap-2 absolute bg-white px-2 py-2 bg-[#0000008a] backdrop-blur-lg top-[78%] left-[32%] rounded-lg group-hover:opacity-100 opacity-0 transition-all duration-200"
+          className="flex gap-2 absolute px-2 py-2 bg-black/50 backdrop-blur-lg top-[78%] left-[32%] rounded-lg group-hover:opacity-100 opacity-0 transition-all duration-200"
           to={article.url}
           target="_blank"
         >
@@ -21,7 +21,7 @@ const Card = ({ article }) => {
           />
         </figure>
       </div>
-      <body className="flex flex-col items-start justify-between gap-2 w-full h-full backdrop-blur-lg absolute bg-[#0000008a] transition-all duration-200 select-none group-hover:opacity-0 group-hover:h-[0%]">
+      <div className="flex flex-col items-start justify-between gap-2 w-full h-full backdrop-blur-lg absolute bg-black/50 transition-all duration-200 select-none group-hover:opacity-0 group-hover:h-[0%]">
         <div className="mx-4 my-4">
           <h1 className="text-2xl font-medium">{article.name}</h1>
           <span className="text-xs text-white/70">
@@ -29,7 +29,7 @@ const Card = ({ article }) => {
           </span>
           <p className="text-pretty">{article.description}</p>
         </div>
-      </body>
+      </div>
     </article>
   );
 };
