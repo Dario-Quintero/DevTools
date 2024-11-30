@@ -1,6 +1,6 @@
-import Courses from "../../Components/Courses/Courses"
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from "../../Components/Footer/Footer";
+import Courses from "../../components/Courses/Courses";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function ViewCourses() {
   return (
@@ -9,7 +9,7 @@ function ViewCourses() {
       <Courses />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default ViewCourses
+export default ViewCourses;

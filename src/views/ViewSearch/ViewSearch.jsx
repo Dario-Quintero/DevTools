@@ -1,7 +1,6 @@
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from "../../Components/Footer/Footer";
-import Search from "../../Components/Search/Search"
-
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Search from "../../components/Search/Search";
 
 function ViewSearch() {
   return (
@@ -10,7 +9,7 @@ function ViewSearch() {
       <Search />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default ViewSearch
+export default ViewSearch;

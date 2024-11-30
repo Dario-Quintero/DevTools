@@ -1,10 +1,10 @@
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from "../../Components/Footer/Footer";
-import Home from "../../Components/Home/Home"
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Home from "../../components/Home/Home";
 
 function ViewHome() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div>
       <Navbar />
       <Home />
       <Footer />

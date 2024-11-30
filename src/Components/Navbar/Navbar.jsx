@@ -1,166 +1,82 @@
-import LogoIcon from "../icons/LogoIcon";
-import MenuIcon from "../icons/MenuIcon";
-import { useLocation, Link } from "react-router-dom";
-import { useState } from "react";
-import SearchBar from "./SearchBar/SearchBar";
-import ToggleTheme from "./ToggleTheme/ToggleTheme";
-import CloseIcon from "../icons/CloseIcon";
+import React from "react";
+import {
+  Navbar as NextUINavbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
 
-function MenuResponsive({ view, setView }) {
-  const { pathname } = useLocation();
-  if (!view) {
-    null;
-  } else {
-    return (
-      <div className="w-full h-screen flex flex-col fixed top-0 left-0 backdrop-blur-lg z-50">
-        <nav className="flex items-center justify-between gap-4 p-4 bg-white dark:bg-black w-full">
-          <Link to={"/"}>
-            <LogoIcon className="w-8 h-8 text-black dark:text-white" />
-          </Link>
-          <div className="flex md:hidden gap-2 items-center">
-            <ToggleTheme />
-            <CloseIcon
-              className="w-8 h-8 text-black dark:text-white cursor-pointer"
-              onClick={() => setView(!view)}
-            />
-          </div>
-        </nav>
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-        <div className="w-full h-full bg-white/90 dark:bg-black/90 px-4 py-4 relative">
-          <ul className="flex flex-col gap-4">
-            <li>
-              <Link
-                to="/front-end"
-                className={`font-medium transition-all ${
-                  pathname === "/front-end"
-                    ? "text-blue-500"
-                    : "dark:hover:text-white text-black dark:text-white/70"
-                }`}
-              >
-                Front-End
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/back-end"
-                className={`font-medium transition-all ${
-                  pathname === "/back-end"
-                  ? "text-blue-500"
-                  : "dark:hover:text-white text-black dark:text-white/70"
-              }`}
-              >
-                Back-End
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/extensions"
-                className={`font-medium transition-all ${
-                  pathname === "/extensions"
-                  ? "text-blue-500"
-                  : "dark:hover:text-white text-black dark:text-white/70"
-              }`}
-              >
-                Extensiones
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/courses"
-                className={`font-medium transition-all ${
-                  pathname === "/courses"
-                  ? "text-blue-500"
-                  : "dark:hover:text-white text-black dark:text-white/70"
-              }`}
-              >
-                Cursos
-              </Link>
-            </li>
-            <SearchBar />
-          </ul>
-        </div>
-      </div>
-    );
-  }
-}
+  const menuItems = ["Frontend", "Backend"];
 
-function Navbar() {
-  const { pathname } = useLocation();
-  const [view, setView] = useState(false);
   return (
-    <nav className="flex items-center justify-between gap-4 p-4 bg-white dark:bg-black w-full">
-      <MenuResponsive view={view} setView={setView} />
-
-      <div className="flex gap-10 items-center">
-        <Link to={"/"}>
-          <LogoIcon className="w-8 h-8 text-black dark:text-white" />
-        </Link>
-        <ul className="hidden md:flex gap-3 items-center">
-          <li>
-            <Link
-              to="/front-end"
-              className={`font-medium transition-all ${
-                pathname === "/front-end"
-                  ? "text-blue-500"
-                  : "dark:hover:text-white text-black dark:text-white/70"
-              }`}
-            >
-              Front-End
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/back-end"
-              className={`font-medium transition-all ${
-                pathname === "/back-end"
-                  ? "text-blue-500"
-                  : "dark:hover:text-white text-black dark:text-white/70"
-              }`}
-            >
-              Back-End
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/extensions"
-              className={`font-medium transition-all ${
-                pathname === "/extensions"
-                  ? "text-blue-500"
-                  : "dark:hover:text-white text-black dark:text-white/70"
-              }`}
-            >
-              Extensiones
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/courses"
-              className={`font-medium transition-all ${
-                pathname === "/courses"
-                  ? "text-blue-500"
-                  : "dark:hover:text-white text-black dark:text-white/70"
-              }`}
-            >
-              Cursos
-            </Link>
-          </li>
-        </ul>
-      </div>
-
-      <div className="hidden md:flex gap-4 items-center">
-        <SearchBar />
-        <ToggleTheme />
-      </div>
-
-      <div className="flex md:hidden gap-2 items-center">
-        <ToggleTheme />
-        <MenuIcon
-          className="w-8 h-8 text-black dark:text-white cursor-pointer"
-          onClick={() => setView(!view)}
+    <NextUINavbar onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
         />
-      </div>
-    </nav>
+        <NavbarBrand>
+          <p className="font-bold text-inherit">ACME</p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Features
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="#" aria-current="page">
+            Customers
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Integrations
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden lg:flex">
+          <Link href="#">Login</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Button as={Link} color="primary" href="#" variant="flat">
+            Sign Up
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              color={
+                index === 2
+                  ? "primary"
+                  : index === menuItems.length - 1
+                  ? "danger"
+                  : "foreground"
+              }
+              className="w-full"
+              href="#"
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </NextUINavbar>
   );
-}
+};
 
 export default Navbar;
