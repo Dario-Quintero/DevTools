@@ -1,6 +1,6 @@
-import Courses from "../../components/Courses/Courses";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
+import Courses from "../../comp/Courses/Courses";
+import Navbar from "../../comp/Navbar/Navbar";
+import Footer from "../../comp/Footer/Footer";
 
 function ViewCourses() {
   return (

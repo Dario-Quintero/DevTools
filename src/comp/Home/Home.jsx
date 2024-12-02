@@ -1,7 +1,8 @@
 import Cards from "../Cards/Cards";
+
 import { ITEMS } from "../../assets/items/items";
 
-function Home() {
+const Home = () => {
   const items = ITEMS.sort((a, b) => a.name.localeCompare(b.name));
 
   const uniqueItems = items.filter(
@@ -9,10 +10,10 @@ function Home() {
   );
 
   return (
-    <div className="flex flex-col items-center gap-5 bg-white dark:bg-black mx-10">
+    <div className="flex flex-col items-center gap-5 mx-10">
       <Cards items={uniqueItems} />
     </div>
   );
-}
+};
 
 export default Home;

@@ -1,6 +1,6 @@
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Search from "../../components/Search/Search";
+import Navbar from "../../comp/Navbar/Navbar";
+import Footer from "../../comp/Footer/Footer";
+import Search from "../../comp/Search/Search";
 
 function ViewSearch() {
   return (

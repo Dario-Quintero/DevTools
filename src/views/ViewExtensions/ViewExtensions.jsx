@@ -1,6 +1,6 @@
-import Extensions from "../../components/Extensions/Extensions";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
+import Extensions from "../../comp/Extensions/Extensions";
+import Navbar from "../../comp/Navbar/Navbar";
+import Footer from "../../comp/Footer/Footer";
 
 function ViewExtensions() {
   return (

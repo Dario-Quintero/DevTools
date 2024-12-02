@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import {
   Navbar as NextUINavbar,
   NavbarBrand,
@@ -12,46 +12,48 @@ import {
 } from "@nextui-org/react";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["Frontend", "Backend"];
+  const menuItems = ["Frontend", "Backend", "Extensiones", "Cursos"];
 
   return (
     <NextUINavbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Cerrar menu" : "Abrir menu"}
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">ACME</p>
+          <p className="font-bold text-inherit">DEVTOOLS</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
-            Features
+            Frontend
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link href="#" aria-current="page">
-            Customers
+            Backend
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            Integrations
+            Extensiones
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Cursos
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+            Iniciar sesión
           </Button>
         </NavbarItem>
       </NavbarContent>

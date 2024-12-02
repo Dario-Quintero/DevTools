@@ -1,14 +1,14 @@
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Home from "../../components/Home/Home";
+import Navbar from "../../comp/Navbar/Navbar";
+import Footer from "../../comp/Footer/Footer";
+import Home from "../../comp/Home/Home";
 
 function ViewHome() {
   return (
-    <div>
+    <>
       <Navbar />
       <Home />
       <Footer />
-    </div>
+    </>
   );
 }
 

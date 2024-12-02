@@ -1,6 +1,6 @@
-import Navbar from "../../components/Navbar/Navbar";
-import Frontend from "../../components/Frontend/Frontend";
-import Footer from "../../components/Footer/Footer";
+import Navbar from "../../comp/Navbar/Navbar";
+import Frontend from "../../comp/Frontend/Frontend";
+import Footer from "../../comp/Footer/Footer";
 
 function ViewFrontend() {
   return (
